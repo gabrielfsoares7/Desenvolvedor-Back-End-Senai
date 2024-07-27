@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="DevBackEnd2s24"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-07-27 12:48:47 "/>
+        <attribute name="created" value="RGV2QmFja0VuZDJzMjQ7REVTS1RPUC1FUTVMSkdPOzIwMjQtMDctMjc7IjEyOjMwOjU3ICI7MzQ4NQ=="/>
+        <attribute name="edited" value="RGV2QmFja0VuZDJzMjQ7REVTS1RPUC1FUTVMSkdPOzIwMjQtMDctMjc7IjEyOjQ4OjQ3ICI7MTszNjAx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero" type="Integer" array="False" size=""/>
+            <output expression="&quot;Escreva um n&#250;mero para ver se &#233; impar ou bar&quot;" newline="True"/>
+            <input variable="numero"/>
+            <if expression="numero%2=0">
+                <then>
+                    <output expression="numero&amp;&quot;&#233; Par&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="numero&amp;&quot; &quot; &amp;&quot;&#233; impar&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="DevBackEnd2s24"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-07-27 02:03:11 "/>
+        <attribute name="created" value="RGV2QmFja0VuZDJzMjQ7REVTS1RPUC1FUTVMSkdPOzIwMjQtMDctMjc7IjEyOjQ4OjUyICI7MzQ4OQ=="/>
+        <attribute name="edited" value="RGV2QmFja0VuZDJzMjQ7REVTS1RPUC1FUTVMSkdPOzIwMjQtMDctMjc7IjAyOjAzOjExICI7MTszNTgy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="notaAluno" type="Integer" array="False" size=""/>
+            <output expression="&quot;Escreva a nota do aluno&quot;" newline="True"/>
+            <input variable="notaAluno"/>
+            <if expression="notaAluno&gt;=50">
+                <then>
+                    <output expression="&quot;Sua nota &#233; &quot;&amp;notaAluno&amp; &quot; est&#225; Aprovado&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="notaAluno&gt;=45">
+                        <then>
+                            <output expression="&quot;Sua nota &#233; &quot;&amp;notaAluno&amp; &quot; Vai para o conselho&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Sua nota &#233; &quot;&amp;notaAluno&amp; &quot; est&#225; Reprovado&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
