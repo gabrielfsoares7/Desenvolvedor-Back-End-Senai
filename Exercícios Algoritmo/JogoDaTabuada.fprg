@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="joaov"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-02 03:58:38 "/>
+        <attribute name="created" value="am9hb3Y7SlY7MjAyNC0wNy0yODsiMTE6NTA6MjcgIjsxODk5"/>
+        <attribute name="edited" value="am9hb3Y7SlY7MjAyNC0wNy0yODsiMDI6NTQ6MDcgIjsyOzIwMTA="/>
+        <attribute name="edited" value="R2FicmllbC1QQztHQUJSSUVMOzIwMjQtMDgtMDI7IjAzOjU4OjM4ICI7MTsyNjk2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="resposta" type="Integer" array="False" size=""/>
+            <assign variable="resposta" expression="0"/>
+            <while expression="resposta = 0">
+                <do expression="resposta = 0">
+                    <output expression="&quot;Bem vindo ao jogo da tabuada&quot;" newline="True"/>
+                    <output expression="&quot;O objetivo do jogo e reponder corretamente as mutiplica&#231;&#227;o apresentada, no total ser&#227;o 4 perguntas, se correta voc&#234; passa para proxima se errada o jogo acaba&quot;" newline="True"/>
+                    <output expression="&quot;Vamos come&#231;ar&quot;" newline="True"/>
+                    <output expression="&quot;Quanto &#233; 9 X 5? &quot;" newline="True"/>
+                    <input variable="resposta"/>
+                    <if expression="resposta != 45">
+                        <then>
+                            <output expression="&quot;Resposta errada&quot;" newline="True"/>
+                            <output expression="&quot;GAME OVER&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Resposta correta!&quot;" newline="True"/>
+                            <output expression="&quot;Vamos para proxima pergunta&quot;" newline="True"/>
+                            <output expression="&quot;Quanto &#233; 7 X 6? &quot;" newline="True"/>
+                            <input variable="resposta"/>
+                            <if expression="resposta != 42">
+                                <then>
+                                    <output expression="&quot;Resposta errada&quot;" newline="True"/>
+                                    <output expression="&quot;GAME OVER&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Resposta correta!&quot;" newline="True"/>
+                                    <output expression="&quot;Vamos para proxima pergunta&quot;" newline="True"/>
+                                    <output expression="&quot;Quanto &#233; 5 X 2? &quot;" newline="True"/>
+                                    <input variable="resposta"/>
+                                    <if expression="resposta != 10">
+                                        <then>
+                                            <output expression="&quot;Resposta errada&quot;" newline="True"/>
+                                            <output expression="&quot;GAME OVER&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Resposta correta!&quot;" newline="True"/>
+                                            <output expression="&quot;Vamos para proxima pergunta&quot;" newline="True"/>
+                                            <output expression="&quot;Quanto &#233; 8 X 7? &quot;" newline="True"/>
+                                            <input variable="resposta"/>
+                                            <if expression="resposta = 56">
+                                                <then>
+                                                    <output expression="&quot;Resposta correta&quot;" newline="True"/>
+                                                    <output expression="&quot;PARABENS!&quot;" newline="True"/>
+                                                    <output expression="&quot;Voc&#234; finalizou o jogo sem errar&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Resposta errada&quot;" newline="True"/>
+                                                    <output expression="&quot;GAME OVER&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </do>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
