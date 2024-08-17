@@ -3,16 +3,16 @@ const readlineSync = require("readline-sync");
 // Função para calcular o desconto do INSS
 function calcularDescontoINSS(salarioBruto) {
   let desconto;
-  if (salarioBruto <= 1302.0) {
+  if (salarioBruto <= 1412.0) {
     desconto = salarioBruto * 0.075;
-  } else if (salarioBruto <= 2571.29) {
+  } else if (salarioBruto <= 2666.68) {
     desconto = salarioBruto * 0.09;
-  } else if (salarioBruto <= 3856.94) {
+  } else if (salarioBruto <= 4000.03) {
     desconto = salarioBruto * 0.12;
-  } else if (salarioBruto <= 7507.49) {
+  } else if (salarioBruto <= 7786.02) {
     desconto = salarioBruto * 0.14;
   } else {
-    desconto = 7507.49 * 0.14; // Teto de contribuição para o INSS
+    desconto = 7786.02 * 0.14; // Teto de contribuição para o INSS
   }
 
   return desconto;
@@ -21,7 +21,7 @@ function calcularDescontoINSS(salarioBruto) {
 // Função para calcular o desconto do Imposto de Renda
 function calcularDescontoIR(salarioBase) {
   let descontoIR;
-  const faixa1 = 1903.98;
+  const faixa1 = 2112.00;
   const faixa2 = 2826.65;
   const faixa3 = 3751.05;
   const faixa4 = 4664.68;
@@ -29,13 +29,13 @@ function calcularDescontoIR(salarioBase) {
   if (salarioBase <= faixa1) {
     descontoIR = 0;
   } else if (salarioBase <= faixa2) {
-    descontoIR = (salarioBase - faixa1) * 0.075 - 142.8;
+    descontoIR = (salarioBase - faixa1) * 0.075 - 158.40;
   } else if (salarioBase <= faixa3) {
-    descontoIR = (salarioBase - faixa2) * 0.15 - 354.8;
+    descontoIR = (salarioBase - faixa2) * 0.15 - 370.40;
   } else if (salarioBase <= faixa4) {
-    descontoIR = (salarioBase - faixa3) * 0.225 - 636.13;
+    descontoIR = (salarioBase - faixa3) * 0.225 - 651.73;
   } else {
-    descontoIR = (salarioBase - faixa4) * 0.275 - 869.36;
+    descontoIR = (salarioBase - faixa4) * 0.275 - 884.96;
   }
 
   return descontoIR;
