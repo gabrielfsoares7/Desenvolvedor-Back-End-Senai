@@ -6,10 +6,10 @@ function calcularDescontoINSS(salarioBruto) {
   if (salarioBruto <= 1412.0) {
     desconto = salarioBruto * 0.075;
   } else if (salarioBruto <= 2666.68) {
-    desconto = salarioBruto * 0.09;
+    desconto = salarioBruto * 0.09 - 21.18;
   } else if (salarioBruto <= 4000.03) {
-    desconto = salarioBruto * 0.12;
-  } else if (salarioBruto <= 7786.02) {
+    desconto = salarioBruto * 0.12 - 101.18;
+  } else if (salarioBruto <= 7786.02 - 181.18) {
     desconto = salarioBruto * 0.14;
   } else {
     desconto = 7786.02 * 0.14; // Teto de contribuição para o INSS
